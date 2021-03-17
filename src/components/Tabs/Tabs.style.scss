@@ -1,0 +1,15 @@
+.nav{
+  &.nav-tabs {
+    .last-item {
+      margin-left: auto;
+      .nav-link:hover {
+        border: none;
+        cursor: pointer;
+      }
+      .sort-link {
+        color: blue;
+        margin-left: 5px;
+      }
+    }
+  }
+}
