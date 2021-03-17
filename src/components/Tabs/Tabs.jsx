@@ -1,4 +1,4 @@
-import React, {useState, useMemo, useCallback, useEffect} from 'react';
+import React, {useState, useMemo,} from 'react';
 import List from '../List/List';
 import Pagination from '../Pagination/Pagination';
 
@@ -64,7 +64,7 @@ const Tabs = ({dataList, pageSize, activePage, afterChanged, actionLike, actionR
       }
       case 'all' :
       default: {
-        return sortHandle(dataList, sortBy);
+        return sortHandle([...dataList], sortBy);
       }
     }
   }, [sortBy, dataList, activeType] );

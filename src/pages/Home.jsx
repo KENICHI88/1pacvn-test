@@ -111,7 +111,7 @@ const Home = () => {
       
       <div className="row my-3">
         <div className="col">
-          {listResult.data.length && <Tabs
+          {(listResult.data.length > 0) && <Tabs
             dataList={listResult.data} 
             pageSize={pageSize} 
             activePage={activePage} 
